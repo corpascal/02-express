@@ -17,6 +17,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
+// GET /test
+app.get(`/test`, (req, res) => {
+    let resultObject = {message: "OK"};
+    res.json(resultObject);
+});
 
 // Récupérer la liste des restos
 // GET /api/v1/restos
