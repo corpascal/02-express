@@ -9,7 +9,7 @@ const app = express();
 const versionApi = '/api/v1';
 
 // permet d'être appelé depuis n'importe quelle application Front sans problème de cross origin
-//
+// CORS
 app.use(cors());
 
 // parse application/x-www-form-urlencoded
